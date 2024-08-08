@@ -116,3 +116,200 @@ int main()
     }
     return 0;
 }
+
+
+
+//countdown
+#include<stdio.h>
+int main()
+{
+    int countdown = 3;
+
+    while (countdown > 0)
+    {
+        printf ("%d\n",countdown);
+       countdown --;
+    }
+    {
+        printf("Happy New Year!!");
+    }
+    return 0;
+}
+
+
+
+//even (0-10)
+#include <stdio.h>
+int main()
+{
+    int num = 0;
+
+    while (num <= 10)
+    {
+    printf ("%d\n",num);
+    num += 2;
+    }
+
+    return 0;
+
+}
+
+
+
+//reversing numbers
+#include<stdio.h>
+int main()
+{
+    int number = 12345;
+    int revnumber =0;
+
+
+    while(number)
+    {
+       revnumber = revnumber * 10 + number % 10;
+        number /= 10;
+    }
+
+    printf ("The reversed number is:%d", revnumber);
+    return 0;
+}
+
+
+
+//reversing numbers user input
+#include<stdio.h>
+int main()
+{
+    int number;
+    int revnumber = 0;
+
+    printf("Enter the numbers to be reversed:");
+    scanf ("%d",&number);
+    printf ("The entered numbers are:%d\n",number);
+
+    while (number)
+    {
+        revnumber = revnumber*10 + number%10;
+        number/=10;
+    }
+    printf ("The reversed numbers are:%d", revnumber);
+    return 0;
+}
+
+
+
+//dice
+#include <stdio.h>
+int main()
+{
+    int dice=1;
+
+    while (dice<=6)
+    {
+        if (dice < 6)
+        {
+            printf("No Yatsy:(\n");
+        }
+        else
+        {
+          printf ("Yes Yatsy!!!:)");
+        }
+        dice++;
+    }
+    return 0;
+}
+
+
+
+//program that counts to 100 by 10
+#include<stdio.h>
+int main()
+{
+    int i;
+
+    for (i=0; i<=100; i+=10)
+    {
+        printf("%d\n",i);
+    }
+    return 0;
+}
+
+
+
+//even numbers between 0 and 10
+#include<stdio.h>
+int main()
+{
+    int i;
+
+    for (i=0; i<=10; i+=2)
+    {
+        printf ("%d\n",i);
+    }
+    return 0;
+}
+
+
+
+//odd numbers between 0 and 10
+#include<stdio.h>
+int main()
+{
+    int i;
+
+    for (i=1; i<=10; i+=2)
+    {
+        printf ("%d\n",i);
+    }
+    return 0;
+}
+
+
+
+//powers of 2 upto 512
+#include<stdio.h>
+int main()
+{
+    int i;
+
+    for(i=2; i<=512; i*=2)
+    {
+        printf ("%d\n",i);
+    }
+    return 0;
+}
+
+
+
+//multiplication table
+#include<stdio.h>
+int main()
+{
+    int number = 2;
+    int i;
+
+    for (i=1; i<=10; i++)
+    {
+        printf("%d x %d = %d\n",number, i, number * i);
+    }
+    return 0;
+}
+
+
+
+//multiplication by user's input
+#include<stdio.h>
+int main()
+{
+    int number;
+    int i;
+    printf ("Enter a number:");
+    scanf ("%d",&number);
+    printf ("The multiplication table of: %d\n",number);
+
+    for (i=1; i<=10; i++)
+    {
+        printf ("%d x %d = %d\n",number, i, number*i);
+    }
+    return 0;
+}
